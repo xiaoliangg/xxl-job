@@ -6,10 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class HelloYangQiQi extends HttpServlet {
+public class HelloServlet extends HttpServlet {
     private int i;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         resp.setContentType("text/html;charset=utf-8");
         resp.getWriter().println("2222"
                 + "time:2017-5-17 10:12:25:81" + "  " + (i++));
